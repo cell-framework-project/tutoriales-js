@@ -9,7 +9,7 @@ additionButton.addEventListener('click',()=>{
   dataTable.push(additionResult);
   console.log(dataTable);
 
-  printTable('results-table',dataTable);
+  printTable('table-results',dataTable);
 
 });
 
