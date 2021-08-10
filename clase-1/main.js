@@ -1,5 +1,6 @@
 //array
 let letters = ['A','B','C'];
+
 //object
 let person = {
   name:'Fernando',
@@ -8,6 +9,7 @@ let person = {
   birthDate:'1998-03-20',
   email:'facostatorres34@gmail.com'
 };
+
 //table
 let fruits = [
   {id:1,name:'apple'},
@@ -18,6 +20,7 @@ let fruits = [
   {id:6,name:'blueberry'},
   {id:7,name:'cherry'}
 ];
+
 //numbers
 let numbers = [
   [65,81,9,45,87],
@@ -26,4 +29,14 @@ let numbers = [
   [19,9,19,15,18]  
 ];
 
+letters.push('D');
+letters.push('E');
+letters.push('F');
+
+console.log(letters);
+
+const letter = letters.pop();
+
+console.log(letters);
+console.log(letter);
 

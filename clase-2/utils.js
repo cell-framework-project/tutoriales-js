@@ -18,6 +18,17 @@ function addition(numbers) {
 
 }
 
+function substraction(numbers) {
+  
+  return {
+    number1:numbers.number1,
+    number2:numbers.number2,
+    operation:'substraction',
+    result:numbers.number1-numbers.number2
+  }
+
+}
+
 function printTable(tableId,data){
 
   const table = document.getElementById(tableId);
