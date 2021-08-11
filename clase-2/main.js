@@ -12,6 +12,7 @@ additionButton.addEventListener('click',()=>{
   const additionResult = addition(numbers);
   dataTable.push(additionResult);
   printTable('table-results',dataTable);
+  clearDeleted('deleted');
 
 });
 
@@ -22,19 +23,22 @@ substractionButton.addEventListener('click',()=>{
   const substractionResult = substraction(numbers);
   dataTable.push(substractionResult);
   printTable('table-results',dataTable);
+  clearDeleted('deleted');
 
 });
 
 undoButtonFirst.addEventListener('click',()=>{
   const first = dataTable.shift();
   console.log(first);
-  printTable('table-results',dataTable)
+  printTable('table-results',dataTable);
+  printDeleted('deleted',first);
 });
 
 undoButtonLast.addEventListener('click',()=>{
   const last = dataTable.pop();
   console.log(last);
   printTable('table-results',dataTable);
+  printDeleted('deleted',last);
 });
 
 

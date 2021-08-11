@@ -52,3 +52,17 @@ function printTable(tableId,data){
   table.innerHTML = layout;
 
 }
+
+function printDeleted(deletedId,deletedRow){
+
+  const deletedElement = document.getElementById(deletedId);
+  deletedElement.innerHTML = `Elemento eliminado ${deletedRow.number1} , ${deletedRow.number2} , ${deletedRow.operation} , ${deletedRow.result}`;
+
+}
+
+function clearDeleted(deletedId){
+
+  const deletedElement = document.getElementById(deletedId);
+  deletedElement.innerHTML = ``;
+
+}
