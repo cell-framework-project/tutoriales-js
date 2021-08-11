@@ -37,8 +37,6 @@ function printTable(tableId,data){
 
   data.forEach(line => {
     
-    console.log(line);
-
     const row = 
     `<tr>
       <td>${line.number1}</td>
